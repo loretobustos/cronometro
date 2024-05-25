@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- // Manipulación del DOM -->
+    <!-- // Aprender a interactuar con el Document Object Model (DOM) es crucial para el desarrollo web. -->
+    <p id="demo">Hola Mundo!</p>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("demo").innerHTML = "Texto cambiado!";
+        }
+    </script>
+
+
+
+
+
+
+    <!-- Manipulación Avanzada del DOM -->
+    <!-- Trabajar con eventos y la creación dinámica de elementos del DOM. -->
+    <ul id="lista"></ul>
+    <button onclick="agregarElemento()">Agregar Elemento</button>
+
+    <script>
+        function agregarElemento() {
+            let li = document.createElement("li");
+            li.textContent = "Nuevo Elemento";
+            document.getElementById("lista").appendChild(li);
+        }
+    </script>
+
+
+
+
+
+    <div id="tiempoTranscurrido">0 minutos y 0 segundos</div>
+    <button onclick="mostrarTiempo()">Mostrar tiempo transcurrido</button>
+    <button onclick="reiniciarCronometro()">Reiniciar cronómetro</button>
+
+
+
+
+
+    <script src="assets/js/cronometro.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/avanzado.js"></script>
+</body>
+
+</html>
